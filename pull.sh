@@ -1,5 +1,6 @@
 ref=$(git symbolic-ref HEAD | cut -d'/' -f3)
-echo opening pull request for $ref
+repo=`git remote -v | grep -m 1 origin | sed "s/git@github.com://" | sed "s/\.git//"`
+echo opening pull request for $ref on $repo
 branch=""
 if [ $1 ]; then
 	branch="$1...$ref"
@@ -7,4 +8,4 @@ else
 	branch="develop...$ref"
 fi
 echo $branch
-open -a /Applications/Firefox\ 2.app http://github.com/springrole/attestation-system/compare/$branch?expand=1
+open -a /Applications/Firefox\ 2.app http://github.com/$repo/compare/$branch?expand=1
