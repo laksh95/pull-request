@@ -7,7 +7,5 @@ if [ $1 ]; then
 else
 	branch="develop...$ref"
 fi
-echo $branch
-echo $repo
-#open -a /Applications/Firefox\ 2.app http://github.com/$repo/compare/$branch?expand=1
-open -a /Applications/Google\ Chrome.app http://github.com/$repo/compare/$branch?expand=1 
+echo $branch 
+open http://github.com/$repo/compare/$branch
