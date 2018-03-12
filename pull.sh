@@ -1,4 +1,4 @@
-ref=$(git symbolic-ref HEAD | cut -d'/' -f3)
+ref=$(git symbolic-ref --short -q HEAD)
 repo=`git config --get remote.origin.url | sed "s/git@github.com://" | sed "s/\.git//"`
 echo opening pull request for $ref on $repo
 branch=""
