@@ -10,4 +10,5 @@ fi
 echo $branch
 echo $repo
 #open -a /Applications/Firefox\ 2.app http://github.com/$repo/compare/$branch?expand=1
-open -a /Applications/Google\ Chrome.app http://github.com/$repo/compare/$branch?expand=1 
+#open -a /Applications/Google\ Chrome.app http://github.com/$repo/compare/$branch?expand=1 
+open -a http://github.com/$repo/compare/$branch?expand=1 
