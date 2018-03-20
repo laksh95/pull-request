@@ -1,8 +1,8 @@
 # pull-request
 
-HOW IT WORKS:
+# HOW IT WORKS:
 
-Step 1: Clone this repository
+# Step 1: Clone this repository
   
     `git clone https://github.com/laksh95/pull-request.git` 
 
@@ -10,13 +10,13 @@ Step 1: Clone this repository
 
     `git clone https://github.com/laksh95/pull-request.git /path/to/your/folder`
   
-Step 2: make the script executable
+# Step 2: make the script executable
 
      RUN: `chmod +x /path/to/repository-folder/pull.sh`
     
      This will give excutable privilege to the script.
  
-Step 3: Create an alias in your `.bashrc` or `.zshrc` 
+# Step 3: Create an alias in your `.bashrc` or `.zshrc` 
 
      In both cases the format to create an alias is same.
 
@@ -29,11 +29,11 @@ Step 3: Create an alias in your `.bashrc` or `.zshrc`
     `alias pr='sh /path/to/repository-folder/pull.sh'`
  
  
-Voila, alias is ready script is ready now in order to make a PR all you have to do is call the alias and rest will be taken care by itself.
+Voila, alias is ready and script is ready, now in order to make a PR all you have to do is call the alias and rest will be taken care of by itself.
 
-Also, important things to note here.
+# Also, important things to note here.
 
-The default branch name is set to `develop`. Since I made the script I used the one which I wanted. So in case your base branch is different there are 2 ways do it:
+The default base branch name is set to `develop`. Since I made the script I used the one which I wanted. So in case your base branch is different there are 2 ways do it:
 
 1. When you call the alias pass a parameter as the name of the base branch you want to create pull request to.
 
