@@ -29,14 +29,6 @@
     `alias pr='sh /path/to/repository-folder/pull.sh'`
  
  Now the following step is required only if you are using Linux envorment
- 
- # Step 4: Change the open command to xdg-open
- 
-  Open the pull.sh in your choice of editor and edit the following line:
-  
-    `open http://github.com/$repo/compare/$branch`
-  
-  Change the command open to xdg-open. Since open command is not supported by Linux. It works with Mac only.
   
 Voila, alias is ready and script is ready, now in order to make a PR all you have to do is call the alias and rest will be taken care of by itself.
 
