@@ -8,4 +8,8 @@ else
 	branch="develop...$ref"
 fi
 echo $branch 
-open http://github.com/$repo/compare/$branch
+if [ "$(uname)" == "Darwin" ]; then
+	open http://github.com/$repo/compare/$branch
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+	xdg-open http://github.com/$repo/compare/$branch
+fi
