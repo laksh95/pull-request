@@ -34,7 +34,7 @@
  
   Open the pull.sh in your choice of editor and edit the following line:
   
-    https://github.com/laksh95/pull-request/blob/master/pull.sh#L11
+    `open http://github.com/$repo/compare/$branch`
   
   Change the command open to xdg-open. Since open command is not supported by Linux. It works with Mac only.
   
