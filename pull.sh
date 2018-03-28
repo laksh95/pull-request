@@ -9,7 +9,7 @@ else
 fi
 echo $branch 
 if [ "$(uname)" == "Darwin" ]; then
-	open http://github.com/$repo/compare/$branch
+	open http://github.com/$repo/compare/$branch?expand=1
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-	xdg-open http://github.com/$repo/compare/$branch
+	xdg-open http://github.com/$repo/compare/$branch?expand=1
 fi
