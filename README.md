@@ -46,6 +46,6 @@ Open the script in your choice of editor and edit the following line:
 
 https://github.com/laksh95/pull-request/blob/master/pull.sh#L8
 
-In this line change the string `develop...#ref` to `your_branch_name...$ref`
+In this line change the string `develop...$ref` to `your_branch_name...$ref`
 
 And now you are good to go.
